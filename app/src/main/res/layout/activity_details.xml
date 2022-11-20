@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:focusable="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:focusableInTouchMode="true"
+        app:hintTextColor="@color/hintcolor"
+        >
+
+        <EditText
+            android:id="@+id/height"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/height" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:focusableInTouchMode="true"
+        app:hintTextColor="@color/hintcolor"
+        >
+        <EditText
+            android:id="@+id/weight"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="@string/weight"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/submit"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/sbackground"
+            android:layout_gravity="center"
+            android:onClick="submitData"
+            />
+</LinearLayout>
